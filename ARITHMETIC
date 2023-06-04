@@ -1,0 +1,32 @@
+Write a program called Arithmetic that takes three command-line arguments: two
+integers followed by an arithmetic operator (+, -, * or /). The program shall perform the
+corresponding operation on the two integers and print the result.
+
+CODE:
+class Arithmetic
+{
+public static void main(String args[])
+{
+
+int a,b;
+a=Integer.parseInt(args[0]);
+b=Integer.parseInt(args[1]);
+char ch=args[2].charAt(0);
+System.out.print(args[0]+args[2]+args[1]+&quot;=&quot;);
+if(ch==&#39;+&#39;)
+System.out.println(a+b);
+
+else if(ch==&#39;-&#39;)
+System.out.println(a-b);
+
+else if(ch==&#39;x&#39;)
+System.out.println(a*b);
+
+else if(ch==&#39;/&#39;)
+System.out.println(a/b);
+
+else if(ch==&#39;%&#39;)
+System.out.println(a%b);
+
+}
+}
